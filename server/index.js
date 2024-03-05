@@ -7,7 +7,7 @@ import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 // Import authentication controllers
-import { Google, Account } from '../lib/controller.js';
+import { Google, Account } from './controller.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
