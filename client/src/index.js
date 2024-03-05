@@ -4,16 +4,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Route, Routes, BrowserRouter} from 'react-router-dom';
 import { AuthProvider } from './Hooks/useAuth';
+// import BaseThemeProvider from './Config/BaseThemeProvider';
+import { ThemeContextProvider } from './Config/ThemeProvider';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <AuthProvider>
-        <Routes>
-          <Route path="/*" element={<App/>}/>
-        </Routes>
+        <ThemeContextProvider >
+          <Routes>
+            <Route path="/*" element={<App/>}/>
+          </Routes>
+        </ThemeContextProvider>
       </AuthProvider>
     </BrowserRouter>
   </React.StrictMode>
