@@ -21,22 +21,39 @@ This is a template for building web applications using the MERN (React, Node.js)
 
 Follow these steps to get your MERN stack application up and running:
 
-1. **Clone this repository to your local machine:**
+#### 1. **Clone this repository to your local machine:**
   ```shell
   git clone https://github.com/haroldcastillo/React-Template-JS.git
   ```
-
-2. **Setup client side development:**
+  1.1 Allow running scripts in powershell (for Windows only)
+  ```shell
+  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+  ```
+  
+#### 2. **Setup client side development:**
   2.1. Navigate to the project folder:
   ```shell
     cd client
   ```
   2.2. Command to initialize:
   ```shell
-    npm install
+    pnpm install
   ```
-
   2.3. Start the client development servers:
   ```shell
-    npm start
+    pnpm start
+  ```  
+  
+#### 3. **Setup server side development**
+  3.1. Navigate to the project folder:
+  ```shell
+    cd server
+  ```
+  3.2. Command to initialize:
+  ```shell
+    pnpm install
+  ```
+  3.3. Start the server development servers:
+  ```shell
+    pnpm start
   ```  
